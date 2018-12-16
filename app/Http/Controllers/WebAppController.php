@@ -11,7 +11,4 @@ class WebAppController extends Controller
     public function index(){
         return view('index');
     }
-    public function check(Request $request){
-        return view('welcome');
-    }
 }

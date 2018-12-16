@@ -22,6 +22,7 @@ Route::get('/api/penyakit','PenyakitApiController@showPenyakit');
 Route::get('/api/gejala','PenyakitApiController@showGejala');
 
 Route::get('/api/selgejala','PenyakitApiController@showSelGejala');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/penyakit', 'PenyakitController');
+
+Auth::routes();

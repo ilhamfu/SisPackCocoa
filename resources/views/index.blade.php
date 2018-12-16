@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
 <div class="container-fluid pt-3 mb-3">
@@ -62,5 +62,5 @@
         </div>
     </div>
 </div>
-<script src="{{asset('js/script.js')}}"></script>    
+<script src="{{asset('js/script.js')}}"></script>
 @endsection

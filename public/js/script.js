@@ -66,7 +66,7 @@ const updateListPenyakit=function(page=1){
 
             $("#list1").html("")
             result['data'].forEach(function (datum) {
-                var list = `<a href="${datum["id"]}" class="list-group-item btn-outline-primary">${datum["name"]}</a>`
+                var list = `<a href="penyakit/${datum["id"]}" class="list-group-item btn-outline-primary">${datum["name"]}</a>`
                 $("#list1").append(list)
             });
             $("#pagination1").html("")
